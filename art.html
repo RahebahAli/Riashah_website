@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang>
+      <head>
+          <meta charset = "utf-8">
+            <title> خارج المألوف - ريشة  </title>
+
+               <link rel="stylesheet" href="style.css" >
+       <style>
+        p , h2 {
+     text-align: center;
+
+        }
+
+        .content{
+          margin: 20px;
+        }
+
+		#blog img{
+		border-style: ridge;
+			border-width:6px;
+		}
+
+       </style>
+          </head>
+          <body>
+          <div class="head">
+            <video class="videobackground " autoplay muted loop src="Images/colorbackground.mp4"  ></video>
+             <h2 class="texthead">ريشة</h2>
+           </div>
+             <div id="navbar">
+               <a class="active" href="home.html">الرئيسية</a>
+               <a href="gallary.html"> معرض الرسمات</a>
+               <a href="comments_Box.php">اراء الزوار</a>
+
+</div>
+
+            <div class="all" >
+              <div id="blog">
+                 <h2> خارج المألوف</h2>
+                 <p>
+                  :عندما يفكر الفنان باستغلال البيئة من حوله ليخرج إبداعه تكون النتيجة
+                  <br>
+                   <br>
+
+            <img src="Images/art1.jpeg" alt="drow" width="600" height="420" ><br>
+
+		     	  <img src="Images/art2.jpeg" alt="drow" width="600" height="420"><br>
+
+					  <img src="Images/art3.jpeg" alt="drow" width="600" height="420"><br>
+
+				    <img src="Images/art4.jpeg" alt="drow" width="600" height="420"><br>
+
+             <img src="Images/art5.jpeg" alt="drow" width="600" height="420"><br>
+
+              <img src="Images/art6.jpeg" alt="drow" width="600" height="420"><br>
+
+
+
+                   </p>
+
+
+              </div>
+  </div>
+
+ <script>
+                           window.onscroll = function() {myFunction()};
+
+                           var navbar = document.getElementById("navbar");
+                           var sticky = navbar.offsetTop;
+
+                           function myFunction() {
+                             if (window.pageYOffset >= sticky) {
+                               navbar.classList.add("sticky")
+                             } else {
+                               navbar.classList.remove("sticky");
+                             }
+                           }
+                           </script>
+
+
+
+
+  </body>
+  </html>

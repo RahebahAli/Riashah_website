@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang>
+      <head>
+          <meta charset = "utf-8">
+            <title> Drowing  الرئيسية </title>
+
+               <link rel="stylesheet" href="style.css" >
+ <style>
+      p , h2  {
+        text-align: center;
+      }
+#MonaLisa{
+	border-style: ridge;
+		border-width:6px;
+}
+
+
+
+      </style>
+          </head>
+          <body>
+          <div class="head">
+            <video class="videobackground " autoplay muted loop src="Images/colorbackground.mp4"  ></video>
+             <h2 class="texthead">ريشة</h2>
+           </div>
+             <div id="navbar">
+               <a class="active" href="home.html">الرئيسية</a>
+               <a href="gallary.html"> معرض الرسمات</a>
+               <a href="comments_Box.php">اراء الزوار</a>
+
+</div>
+
+            <div class="all" >
+              <div id="blog">
+                 <h2>من أشهر اللوحات</h2>
+
+                 <p>
+				 <img id="MonaLisa" src="Images/MonaLisa.jpg" alt="لوحة الموناليزا" ><br><br>
+                   موناليزا، هي لوحةٌ فنيةٌ نصفيةٌ تعود للقرن السادس عشر لسيدةٍ يُعتقدُ بِأنها ليزا جوكوندو، بِريشةِ الفنان، والمهندس، والمُهندِس المعماري، والنحّات الإيطالي ليوناردو دا فينشي، [1] حيث رسمها خلال عصر النهضة الإيطالية. استخدم دا فينشي في إنهائها طلاء زيتيا ولوحا خشبيا مِنَ الحور الأسود. تعد هذه اللوحة ملكاً للحكومة الفرنسية حيث تعلق هناك على جدار متحف اللوفر خلف لوح زجاجي مقاوم للرصاص وفي بيئة يتم التحكم بمناخها. لقد وُصِفت هذهِ اللوحة بِأنها "أكثر الأعمال الفنية شهرة في تاريخ
+
+                   ِ الفن، وأكثر عمل فني يتم الكتابة عنه، والتغني به، وزيارته من بينهم"، كما وُصفت أيضًا بِأنها "أكثر الأعمال الفنيّة التي تمت محاكاتها بشكلٍ ساخر في العالَم"
+
+
+
+
+                 </p>
+
+
+              </div>
+  </div>
+
+ <script>
+                           window.onscroll = function() {myFunction()};
+
+                           var navbar = document.getElementById("navbar");
+                           var sticky = navbar.offsetTop;
+
+                           function myFunction() {
+                             if (window.pageYOffset >= sticky) {
+                               navbar.classList.add("sticky")
+                             } else {
+                               navbar.classList.remove("sticky");
+                             }
+                           }
+                           </script>
+
+
+
+
+  </body>
+  </html>

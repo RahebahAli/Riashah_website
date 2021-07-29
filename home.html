@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang >
+      <head>
+          <meta charset = "utf-8">
+            <title> الرئيسية - ريشة</title>
+
+               <link rel="stylesheet" href="style.css" >
+
+          </head>
+          <body>
+          <div class="head">
+            <video class="videobackground " autoplay muted loop src="Images/colorbackground.mp4"  ></video>
+             <h2 class="texthead">ريشة</h2>
+           </div>
+             <div id="navbar">
+               <a class="active" href="#">الرئيسية</a>
+               <a href="gallary.html"> معرض الرسمات</a>
+               <a href="comments_Box.php">اراء الزوار</a>
+
+</div>
+
+            <div class="all">
+
+                <div class="newblog" >
+                  <p id="headNew" > أبرز المواضيع </p>
+
+                    <img id="newpic"  src="Images/woodenColors.png" alt="drow" >
+                    <a id="new" href="woodenColors.html" > الألوان الخشبية </a>
+                    <span class="dot"  onclick="change1();"></span>
+                    <span class="dot"  onclick="change2();"></span>
+                    <span class="dot"  onclick="change3();"></span>
+                    <span class="dot"  onclick="change4();"></span>
+                 </div>
+
+               <img src="roll.png" alt="roll" width="1400">
+
+             <div class="section1" >
+               <h3>تدوينات</h3>
+            <!-- blogs -->
+              <img src="Images/Maical.jpg" alt="أشهر الرسامين" width="200" height="180" >
+                <a id="blog1" href="famousartist.html" >  أشهر الرسامين </a>
+              <img src="Images/MonaLisa.jpg" alt="أشهر لوحة" width="200" height="180" >
+                <a id="blog2" href="monalisa.html" > لوحة الموناليزا </a>
+              <img src="Images/art5.jpeg" alt="خارج المألوف" width="200" height="180" >
+                <a id="blog3" href="art.html" > خارج المألوف </a>
+             </div>
+
+                <img src="Images/roll3.png" alt="roll" width="1400">
+
+             <div class="section2" ><!-- type of color -->
+        <h3>أنواع الألوان</h3>
+               <img src="Images/woodenColors.png" alt="الألوان الخشبية" width="160" height="140" >
+                 <a id="blog4" href="woodenColors.html" > الالوان الخشبية </a>
+               <img src="Images/watercolor.png" alt= "الألوان المائية" width="160" height="140" >
+                 <a id="blog5" href="Watercolor.html" > الألوان المائية </a>
+               <img src="Images/oilcolor.jpg" alt="الالوان الزيتية" width="160" height="140" >
+                 <a id="blog6" href="oilcolor.html" > الألوان الزيتية </a>
+                 <img src="Images/pastel.jpg" alt="الوان الباستيل" width="160" height="140" >
+                   <a id="blog7" href="pastel.html" > ألوان الباستيل</a>
+               </div>
+                  <img src="Images/roll2.png" alt="roll" width="1400">
+
+      <div class="section3">
+        <h3>الرسم بطرق مختلفة</h3><!-- type of drow -->
+        <img src="Images/DrawingShot.jpg" alt="الرسم بالرصاص" width="200" height="180" >
+          <a id="blog8" href="DrawingShot.html" > الرسم بالرصاص </a>
+        <img src="Images/sand.jpg" alt=" الرسم بالرمل" width="200" height="180" >
+          <a id="blog9" href="DrawingWithSand.html" > الرسم بالرمل </a>
+        <img src="Images/الفحم.jpg"  alt=" الرسم بالفحم" width="200" height="180" >
+          <a id="blog10" href="drawingByCoal.html" > الرسم بالفحم</a>
+             </div>
+</div>
+
+             <script>
+             window.onscroll = function() {myFunction()};
+/* from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+             var navbar = document.getElementById("navbar");
+             var sticky = navbar.offsetTop;
+
+             function myFunction() {
+               if (window.pageYOffset >= sticky) {
+                 navbar.classList.add("sticky")
+               } else {
+                 navbar.classList.remove("sticky");
+               }
+             }
+
+              function change1(){
+
+               document.getElementById("newpic").src="Images/woodenColors.png";
+               document.getElementById("new").href="woodenColors.html";
+               document.getElementById("new").innerHTML="الألوان الخشبية" ; }
+               function change2(){
+
+                 document.getElementById("newpic").src="Images/oilcolor.jpg";
+                  document.getElementById("new").href="oilcolor.html";
+                  document.getElementById("new").innerHTML="الألوان الزيتية" ; }
+              function change3(){
+
+                    document.getElementById("newpic").src="Images/Maical.jpg";
+                     document.getElementById("new").href="famousartist.html";
+                     document.getElementById("new").innerHTML="أشهر الرسامين" ; }
+
+              function change4(){
+
+                      document.getElementById("newpic").src="Images/DrawingShot.jpg";
+                      document.getElementById("new").href="DrawingShot.html";
+                      document.getElementById("new").innerHTML="الرسم بالرصاص" ; }
+
+             </script>
+
+
+
+
+          </body>
+</html>
