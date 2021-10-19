@@ -8,5 +8,5 @@
 
 ## Developed by :
 - Amani Alshmai
-- Rahibah Alfulih
+- Rahibah Alflih
 - Rania Almoshigah
